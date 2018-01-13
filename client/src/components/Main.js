@@ -20,7 +20,8 @@ const styles = {
   stickydiv: {
     position: "sticky",
     top: 0,
-    zIndex: 1
+    zIndex: 1,
+    backgroundColor: "#ecf0f1"
   }
 
 };
@@ -67,6 +68,8 @@ class Main extends Component {
 
           <div className="container">
 
+            <div style={styles.stickydiv} className="container">
+
             <div className="row"> {/* ROW ABOVE THUMBNAIL PICTURES CONTAINING CHANGE/REMOVE BUTTONS */}
 
                 <div className="col-sm-2 col-md-2">
@@ -74,7 +77,7 @@ class Main extends Component {
                 </div>
 
                 <div className="col-sm-2 col-md-2">
-                  <a href="#" className="btn btn-primary btn-xs" role="button">Change</a> <a href="#" className="btn btn-default btn-xs" role="button">Remove</a>
+                  <a href="#" className="btn btn-primary btn-xs" role="button">Change</a> <a href="#" className="btn btn-default btn-xs" role="button">Remove</a>            
                 </div>
 
                 <div className="col-sm-2 col-md-2">
@@ -88,8 +91,43 @@ class Main extends Component {
                 <div className="col-sm-2 col-md-2">
                   <a href="#" className="btn btn-primary btn-xs" role="button">Change</a> <a href="#" className="btn btn-default btn-xs" role="button">Remove</a>
                 </div>
+
+            </div> 
+
+            <div className="row">
+              <div style={styles.column} className="col-sm-2 col-md-2">
+                    <div>
+                        
+                    </div>
+              </div>
+
+              <div style={styles.column} className="col-sm-2 col-md-2">
+                    <div>
+                        <p>2014 Ford Explorer</p>
+                    </div>
+              </div>
+
+              <div style={styles.column} className="col-sm-2 col-md-2">
+                    <div>
+                        <p>2014 Honda Pilot</p>
+                    </div>
+              </div>
+
+              <div style={styles.column} className="col-sm-2 col-md-2">
+                    <div>
+                        <p>2014 Nissan Pathfinder</p>
+                    </div>
+              </div>
+
+              <div style={styles.column} className="col-sm-2 col-md-2">
+                    <div>
+                        <p>2014 Chevy Traverse</p>
+                    </div>
+              </div>
 
             </div>
+
+          </div> {/* END OF FIXED AREA CONTAINER */}
 
 
 
@@ -106,23 +144,21 @@ class Main extends Component {
                 <div style={styles.column} className="col-sm-2 col-md-2">
                   <div className="thumbnail">
                     <img src="http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007a_320/2014FRD007a_320_01.png" alt="Ford Explorer" />
-                    <div style={styles.stickydiv} className  ="caption">
-                      <h3>2014 GMC Acadia</h3>                      
-                    </div>
+                    
 
-                    {/* https://reactjs.org/docs/forms.html#the-select-tag */}
-                    <form>
-                      <label>
-                        Pick your favorite La Croix flavor:
-                        <select value="lime">
-                          <option value="grapefruit">Grapefruitsss <span className="info">i</span></option>
-                          <option value="lime">Lime<span className="info">i</span></option>
-                          <option value="coconut">Coconut</option>
-                          <option value="mango">Mango</option>
-                        </select>
-                      </label>
-                      <input type="submit" value="Submit" />
-                    </form>   
+                    <div className="dropdown btn-xs">
+                      <button className="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Dropdown
+                        <span className="caret"></span>
+                      </button>
+                      <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Trim 1<i className="fa fa-info-circle" aria-hidden="true"></i></a></li>
+                        <li><a href="#">Trim 2</a></li>
+                        <li><a href="#">Trim 3</a></li>
+                        <li role="separator" className="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
 
 
                   </div>
@@ -132,20 +168,16 @@ class Main extends Component {
                 <div style={styles.column} className="col-sm-2 col-md-2">
                   <div className="thumbnail">
                     <img src="http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014HON011b_320/2014HON011b_320_01.png" />
-                    <div style={styles.stickydiv} className="caption">
-                      <h3>2014 Honda Pilot</h3>
-                      <p>...</p>
-                    </div>
-
-                    <div className="dropdown">
+                    
+                    <div className="dropdown btn-xs">
                       <button className="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Dropdown
                         <span className="caret"></span>
                       </button>
                       <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Trim 1<i className="fa fa-info-circle" aria-hidden="true"></i></a></li>
+                        <li><a href="#">Trim 2</a></li>
+                        <li><a href="#">Trim 3</a></li>
                         <li role="separator" className="divider"></li>
                         <li><a href="#">Separated link</a></li>
                       </ul>
@@ -158,40 +190,48 @@ class Main extends Component {
               
                 <div style={styles.column} className="col-sm-2 col-md-2">
                   <div className="thumbnail">
-                    <img src="http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014NIS008a_320/2014NIS008a_320_01.png" alt="GMC Acadia" />
-                    <div style={styles.stickydiv} className="caption">
-                      <h3>2014 Nissan Pathfinder</h3>
-                      <p>...</p>
-                      
-                   </div>
-                  </div>
+                    <img src="http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014NIS008a_320/2014NIS008a_320_01.png" alt="GMC Acadia" />  
+
+                    <div className="dropdown btn-xs">
+                      <button className="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Dropdown
+                        <span className="caret"></span>
+                      </button>
+                      <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Trim 1<i className="fa fa-info-circle" aria-hidden="true"></i></a></li>
+                        <li><a href="#">Trim 2</a></li>
+                        <li><a href="#">Trim 3</a></li>
+                        <li role="separator" className="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>    
+
+                  </div>                  
                 </div>             
 
             
                 <div style={styles.column} className="col-sm-2 col-md-2">
                   <div className="thumbnail">
-                    <img src="http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014CHE019a_320/2014CHE019a_320_01.png" alt="Chevy Traverse" />
-                    <div className  ="caption">
-                      <h3>2014 Chevy Traverse</h3>
-                      <p>...</p>
-                      
-                   </div>
+                    <img src="http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014CHE019a_320/2014CHE019a_320_01.png" alt="Chevy Traverse" />  
+
+                    <div className="dropdown btn-xs">
+                      <button className="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Dropdown
+                        <span className="caret"></span>
+                      </button>
+                      <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Trim 1<i className="fa fa-info-circle" aria-hidden="true"></i></a></li>
+                        <li><a href="#">Trim 2</a></li>
+                        <li><a href="#">Trim 3</a></li>
+                        <li role="separator" className="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>    
                   </div>
+                  
                 </div>
              
-            </div> {/* END OF THUMBNAIL ROW */}
-
-
-            <div style={styles.stickydiv} className="container">
-              <div className="row">
-                <div style={styles.column} className="col-sm-2 col-md-2">
-                  <div className="caption">
-                      <h3>2014 Nissan Pathfinder</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
+            </div> {/* END OF THUMBNAIL ROW */}                      
 
          
 
