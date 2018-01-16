@@ -6,8 +6,9 @@ import React, { Component } from 'react';
 import { Link } from "react-router";
 import Navbar from "./Navbar";
 import Fixedarea from "./Fixedarea";
-import Thumbnails from "./Thumbnails";
+import Cards from "./Cards";
 import Vehiclespecs from "./Vehiclespecs";
+
 
 
 // Create the Main component
@@ -17,11 +18,34 @@ class Main extends Component {
 
     return (
       // We can only render a single div. So we need to group everything inside of this main-container one
-      <div className="main-container">
-        <div className="container"> 
+      <div className="container-fluid">
+         
         <Navbar />
         <Fixedarea />
-        <Thumbnails />
+        <Cards />
+
+        <div className="card">
+          <div className="card-header">
+            Featured
+          </div>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item list-group-item-primary">Cras justo odio</li>
+            <li className="list-group-item list-group-item-secondary">Dapibus ac facilisis in</li>
+            <li className="list-group-item list-group-item-primary">Cras justo odio</li>
+            <li className="list-group-item list-group-item-secondary">Dapibus ac facilisis in</li>
+            <li className="list-group-item list-group-item-primary">Cras justo odio</li>
+            <li className="list-group-item list-group-item-secondary">Dapibus ac facilisis in</li>
+            <li className="list-group-item list-group-item-primary">Cras justo odio</li>
+            <li className="list-group-item list-group-item-secondary">Dapibus ac facilisis in</li>
+            <li className="list-group-item list-group-item-primary">Cras justo odio</li>
+            <li className="list-group-item list-group-item-secondary">Dapibus ac facilisis in</li>
+            <li className="list-group-item list-group-item-primary">Cras justo odio</li>
+            <li className="list-group-item list-group-item-secondary">Dapibus ac facilisis in</li>
+          </ul>
+        </div>
+
+
+
         <Vehiclespecs />   
 
 
@@ -32,8 +56,8 @@ class Main extends Component {
             Proudly built using React.js
           </p>
         </footer>
-          
-        </div>
+
+        
       </div>
     );
   }

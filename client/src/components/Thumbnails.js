@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 
-const styles = {
-  
+const styles = {  
   column: {
     padding: 0
   }
@@ -56,7 +55,7 @@ const Thumbnails = () => (
               <span className="caret"></span>
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <li><a href="#">Trim 1<i className="fa fa-info-circle" aria-hidden="true"></i></a></li>
+              <li><a href="#">Trim 1<i className="fa fa-info-circle" aria-hidden="true" href="#" data-toggle="popover" data-placement="right" title="Popover Header" data-content="Some content inside the popover">Toggle popover</i></a></li>
               <li><a href="#">Trim 2</a></li>
               <li><a href="#">Trim 3</a></li>
               <li role="separator" className="divider"></li>
@@ -73,7 +72,7 @@ const Thumbnails = () => (
           <img src="http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014NIS008a_320/2014NIS008a_320_01.png" alt="GMC Acadia" />  
 
           <div className="dropdown">
-            <button className="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <button className="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" data-placement="right" aria-haspopup="true" aria-expanded="true">
               Dropdown
               <span className="caret"></span>
             </button>
