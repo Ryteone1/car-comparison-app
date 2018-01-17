@@ -25,7 +25,7 @@ class Main extends Component {
         <Cards />
         <br />
 
-        <div className="card-group">        
+        <div className="card-group bg-primary mb-3">        
 
             <div className="card">
               <div className="card-header">
@@ -135,11 +135,11 @@ class Main extends Component {
 
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-                <th scope="col">Test</th>
+                <th scope="col">MSRP</th>
+                <th scope="col">$32,500</th>
+                <th scope="col">$33,800</th>
+                <th scope="col">$34,900</th>
+                <th scope="col">$35,100</th>
               </tr>
             </thead>
             <tbody>
@@ -148,6 +148,7 @@ class Main extends Component {
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
+                <td>ll</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
@@ -163,6 +164,15 @@ class Main extends Component {
               </tr>
             </tbody>
           </table>
+
+          <i className="fa fa-info-circle" aria-hidden="true" href="#" data-toggle="popover" data-placement="right" title="Popover Header" data-content="Some content inside the popover"></i>
+
+           <i className="fa fa-info-circle" aria-hidden="true" href="#" tabIndex="0" data-toggle="popover" data-placement="right" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></i>
+
+           <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+
+
+              <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
 
 
           <button type="button" className="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
