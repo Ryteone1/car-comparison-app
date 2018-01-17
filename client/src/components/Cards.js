@@ -22,9 +22,12 @@ const Cards = () => (
           </a>
 
           <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a className="dropdown-item" href="#">Trim 1<i className="fa fa-info-circle" aria-hidden="true" href="#" data-toggle="popover" data-placement="right" title="Popover Header" data-content="Some content inside the popover">Toggle popover</i></a>
-            <a className="dropdown-item" href="#">Trim 2<i className="fa fa-info-circle" aria-hidden="true" href="#" data-toggle="popover" data-placement="right" title="Popover Header" data-content="Some content inside the popover">Toggle popover</i></a>
-            <a className="dropdown-item" href="#">Trim 3<i className="fa fa-info-circle" aria-hidden="true" href="#" data-toggle="popover" data-placement="right" title="Popover Header" data-content="Some content inside the popover">Toggle popover</i></a>
+            <a className="dropdown-item" href="#">Trim 1
+              <i className="fa fa-info-circle" aria-hidden="true" href="#" data-toggle="popover" data-placement="right" title="Popover Header" data-content="Some content inside the popover"></i></a>
+
+            <a className="dropdown-item" href="#">Trim 2<i className="fa fa-info-circle" aria-hidden="true" href="#" data-toggle="popover" data-placement="right" title="Popover Header" data-content="Some content inside the popover"></i></a>
+
+            <a className="dropdown-item" href="#">Trim 3<i className="fa fa-info-circle" aria-hidden="true" href="#" data-toggle="popover" data-placement="right" title="Popover Header" data-content="Some content inside the popover"></i></a>
           </div>
         </div>
         
