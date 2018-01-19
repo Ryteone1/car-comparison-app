@@ -7,7 +7,13 @@ const styles = {
     position: "sticky",
     top: 0,
     zIndex: 1,
-    backgroundColor: "#ecf0f1"
+    backgroundColor: "#ecf0f1",
+    borderRadius: 5,
+    border: "groove"
+  },
+
+  border: {
+    borderLeft: "groove"
   },
 
   paddingTop: {
@@ -20,7 +26,8 @@ const styles = {
     paddingRight: 20,
     paddingLeft: 20,
     boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-    borderRadius: 5
+    borderRadius: 5,
+
   }, 
 
   moveLeft: {
@@ -47,7 +54,7 @@ const Fixedarea = props => (
 
     <div className="row text-center"> {/* ROW ABOVE THUMBNAIL PICTURES CONTAINING CHANGE/REMOVE BUTTONS */}
 
-      <div style={styles.paddingTop} className="col-sm">
+      <div style={styles.paddingTop} className="col-sm border">
         <h5>Comparing 1-4 of 4</h5>
       </div>
 
@@ -82,7 +89,7 @@ const Fixedarea = props => (
 
       <div className="col-sm">
             <div style={styles.yearMake}>
-                <h5>2014 Ford Explorer</h5>
+                <h5>{props.name}</h5>
             </div>
       </div>
 

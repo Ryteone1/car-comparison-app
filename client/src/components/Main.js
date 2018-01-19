@@ -25,11 +25,12 @@ class Main extends Component {
         <Navbar />
         <br />
         <Fixedarea 
-          name={friends[0].name}/>
-        <Cards />
+          name={friends[0].name} />
+        <Cards 
+          image={friends[0].image} />
         <br />
 
-        <Compare />
+      
 
         <br />
         <Vehiclespecs />  
