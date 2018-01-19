@@ -12,14 +12,32 @@ const styles = {
     borderRadius: 5
   },
 
-  topbutton: {
-    paddingTop: 20,
-    paddingRight: 20,
-    paddingLeft: 20 
+  paddingTop: {
+    paddingTop: 15
   },
 
-  column: {
-    padding: 0
+  moveRight: {
+    position: "relative",
+    left: 6,
+    paddingRight: 20,
+    paddingLeft: 20,
+    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+    borderRadius: 5
+  }, 
+
+  moveLeft: {
+    position: "relative",
+    right: 6,
+    paddingRight: 20,
+    paddingLeft: 20,
+    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+    borderRadius: 5
+  },
+
+  yearMake: {
+    position: "relative",
+    top: 6,
+    paddingBottom: 6
   }
 
 };
@@ -31,28 +49,28 @@ const Fixedarea = props => (
 
     <div className="row text-center"> {/* ROW ABOVE THUMBNAIL PICTURES CONTAINING CHANGE/REMOVE BUTTONS */}
 
-      <div className="col-sm">
-        <p>Comparing 1-4 of 4</p>
+      <div style={styles.paddingTop} className="col-sm">
+        <h5>Comparing 1-4 of 4</h5>
       </div>
 
-      <div className="col-sm" style={styles.topbutton}>
-        <button type="button" className="btn btn-primary btn-sm" >Change</button>
-        <button type="button" className="btn btn-secondary btn-sm">Remove</button>    
+      <div style={styles.paddingTop} className="col-sm">
+        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm" >Change</button>
+        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm">Remove</button>    
       </div>
 
-      <div className="col-sm">
-        <button type="button" className="btn btn-primary btn-sm">Change</button>
-        <button type="button" className="btn btn-secondary btn-sm">Remove</button>
+      <div style={styles.paddingTop} className="col-sm">
+        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm">Change</button>
+        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm">Remove</button>
       </div>
 
-      <div className="col-sm">
-        <button type="button" className="btn btn-primary btn-sm">Change</button>
-        <button type="button" className="btn btn-secondary btn-sm">Remove</button>
+      <div style={styles.paddingTop} className="col-sm">
+        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm">Change</button>
+        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm">Remove</button>
       </div>
 
-      <div className="col-sm">
-        <button type="button" className="btn btn-primary btn-sm">Change</button>
-        <button type="button" className="btn btn-secondary btn-sm">Remove</button>
+      <div style={styles.paddingTop} className="col-sm">
+        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm">Change</button>
+        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm">Remove</button>
       </div>
 
     </div> 
@@ -65,27 +83,28 @@ const Fixedarea = props => (
       </div>
 
       <div className="col-sm">
-            <div>
-                <p> {props.name} </p>
+            <div style={styles.yearMake}>
+                <h5>2014 Ford Explorer</h5>
             </div>
       </div>
 
       <div className="col-sm">
-            <div>
-                <p>2014 Honda Pilot</p>
+            <div style={styles.yearMake}>
+                <h5>2014 Honda Pilot</h5>
             </div>
       </div>
 
       <div className="col-sm">
-            <div>
-                <p>2014 Nissan Pathfinder</p>
+            <div style={styles.yearMake}>
+                <h5>2014 Nissan Pathfinder</h5>
             </div>
       </div>
 
       <div className="col-sm">
-            <div>
-                <p>2014 Chevy Traverse</p>
+            <div style={styles.yearMake}> 
+                <h5>2014 Chevy Traverse</h5>
             </div>
+          
       </div>
 
     </div>

@@ -22,13 +22,17 @@ const styles = {
 	boxShadow: {
     boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
     borderRadius: 5
+  },
+
+  background: {
+  	backgroundColor: "#ecf0f1"
   }
 };
 
 const CompareCard = () => (
 
-<div className="card text-center">
-<div style={styles.topbutton}className="dropdown">
+<div style={styles.background} className="card text-center">
+<div style={styles.topbutton} className="dropdown">
   <button style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Year
   </button>
@@ -71,7 +75,7 @@ const CompareCard = () => (
 <br />
 
 <div style={styles.bottombutton} className="dropdown">
-  <button style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button style={styles.boxShadow}className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Trim
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">

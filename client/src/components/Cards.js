@@ -12,12 +12,14 @@ handleTrim = () => {
 */}
 
 const styles = {
-  border: {
-    borderStyle: "inset",
-    borderRadius: 5
+  
+  boxShadow: {
+    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+    borderRadius: 5,
+    backgroundColor: "#ecf0f1"
   },
 
-  boxShadow: {
+  Btn: {
     boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
     borderRadius: 5
   }
@@ -29,7 +31,7 @@ const Cards = () => (
   <div style={styles.boxShadow} className="card-group">
     <div className="card text-center">            
       <div className="card-body">
-        <a className="btn btn-primary btn-sm text-center" href="#" role="button">New Comparison</a>
+        <a style={styles.Btn} className="btn btn-primary btn-sm text-center" href="#" role="button">New Comparison</a>
       </div>
     </div>          
     
