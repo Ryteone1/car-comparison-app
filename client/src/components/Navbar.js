@@ -4,12 +4,17 @@ import { Link } from "react-router";
 const styles = {
   brand: {
     fontSize: 25 
+  },
+
+  boxShadow: {
+    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+    borderRadius: 5
   }
 };
 
 const Navbar = () => (
 
-  <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+  <nav style={styles.boxShadow} className="navbar navbar-expand-lg navbar-dark bg-primary">
     <a style={styles.brand} className="navbar-brand" href="#">Ryte-Auto Comparisons</a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-
