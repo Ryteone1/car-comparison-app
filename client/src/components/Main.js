@@ -26,7 +26,6 @@ class Main extends Component {
         <br />
         <Fixedarea 
           name={friends[0].name}/>
-        <br />
         <Cards />
         <br />
 
