@@ -17,7 +17,7 @@ const styles = {
 };
 
 
-const Fixedarea = () => (
+const Fixedarea = props => (
 
   <div style={styles.fixedarea} className="container-fluid"> {/* FIXED AREA CONTAINER */}
 
@@ -58,7 +58,7 @@ const Fixedarea = () => (
 
       <div className="col-sm">
             <div>
-                <p>2014 Ford Explorer</p>
+                <p> {props.name} </p>
             </div>
       </div>
 

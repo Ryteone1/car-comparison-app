@@ -8,6 +8,7 @@ import Navbar from "./Navbar";
 import Fixedarea from "./Fixedarea";
 import Cards from "./Cards";
 import Vehiclespecs from "./Vehiclespecs";
+import friends from "./friends.json"
 
 
 
@@ -22,7 +23,8 @@ class Main extends Component {
          
         <Navbar />
         <br />
-        <Fixedarea />
+        <Fixedarea 
+          name={friends[0].name}/>
         <Cards />
         <br />
         <Vehiclespecs />  
