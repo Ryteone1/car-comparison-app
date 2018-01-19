@@ -9,6 +9,7 @@ import Fixedarea from "./Fixedarea";
 import Cards from "./Cards";
 import Vehiclespecs from "./Vehiclespecs";
 import friends from "./friends.json"
+import Compare from "./Compare";
 
 
 
@@ -25,7 +26,12 @@ class Main extends Component {
         <br />
         <Fixedarea 
           name={friends[0].name}/>
+        <br />
         <Cards />
+        <br />
+
+        <Compare />
+
         <br />
         <Vehiclespecs />  
 
