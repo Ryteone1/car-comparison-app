@@ -1,15 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router";
-{/*
-state = {
-  trim: "Select Trim"
-}
-
-handleTrim = () => {
-  this.setState({ trim: })
-
-}
-*/}
+import Cars from "./Cars.json";
+import Card from "./Card";
 
 const styles = {
   
@@ -24,7 +16,29 @@ const styles = {
   
 };
 
-const Cards = props => (
+
+class Cards extends React.Component {
+
+  state = {
+    image: "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007a_320/2014FRD007a_320_01.png",
+    trim: "Select Trim"
+  };
+
+
+  selectTrim = () => {
+
+    this.setState({ 
+      image: "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007c_320/2014FRD007c_320_01.png"
+     });
+
+
+
+  };
+
+
+
+  render() {
+      return (
   
   <div style={styles.boxShadow} className="card-group">
     <div style={styles.background} className="card text-center">            
@@ -35,25 +49,29 @@ const Cards = props => (
     
 
     <div className="card text-center">
-      <img className="card-img-top" src={props.image} alt="Card image cap" />
+      <img className="card-img-top" src={this.state.image} alt="Card image cap" />
       <div className="card-body">
 
         <div style={styles.boxShadow} className="dropdown">
           <button className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Select Trim
+            {this.state.trim}
           </button>
 
            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a className="dropdown-item" href="#">FWD 4dr XLT
+            <a className="dropdown-item" href="#">{Cars[0].name}
               <i className="fa fa-info-circle pull-right" aria-hidden="true" href="#" tabIndex="0" data-toggle="popover" data-placement="right" data-trigger="hover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></i>
+            }
+            }
             </a> 
 
-            <a className="dropdown-item" href="#">FWD 4dr Limited
+            <a className="dropdown-item" href="#" onClick={this.selectTrim}>{this.props.name}
               <i className="fa fa-info-circle pull-right" aria-hidden="true" href="#" tabIndex="0" data-toggle="popover" data-placement="right" data-trigger="hover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></i>
+            }
             </a> 
 
-            <a className="dropdown-item" href="#">Trim 3
+            <a className="dropdown-item" href="#">{Cars[2].name}
               <i className="fa fa-info-circle pull-right" aria-hidden="true" href="#" tabIndex="0" data-toggle="popover" data-placement="right" data-trigger="hover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></i>
+            }
             </a> 
           </div>
 
@@ -154,8 +172,10 @@ const Cards = props => (
 
   </div>
 
-
-);
+ 
+        );
+  }
+};
   
 
 export default Cards;

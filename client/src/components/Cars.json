@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "FWD 4dr XLT",
+    "image":
+      "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007a_320/2014FRD007a_320_01.png"
+  },
+  {
+    "id": 2,
+    "name": "FWD 4dr Limited",
+    "image":
+      "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007c_320/2014FRD007c_320_01.png"
+  },
+  {
+    "id": 3,
+    "name": "4WD 4dr Sport",
+    "image":
+      "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007b_320/2014FRD007b_320_01.png"
+  }
+]

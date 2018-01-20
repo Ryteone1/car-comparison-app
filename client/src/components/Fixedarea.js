@@ -17,7 +17,8 @@ const styles = {
   },
 
   paddingTop: {
-    paddingTop: 15
+    paddingTop: 15,
+    borderRightStyle: "groove"
   },
 
   moveRight: {
@@ -26,8 +27,7 @@ const styles = {
     paddingRight: 20,
     paddingLeft: 20,
     boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-    borderRadius: 5,
-
+    borderRadius: 5
   }, 
 
   moveLeft: {
@@ -54,7 +54,7 @@ const Fixedarea = props => (
 
     <div className="row text-center"> {/* ROW ABOVE THUMBNAIL PICTURES CONTAINING CHANGE/REMOVE BUTTONS */}
 
-      <div style={styles.paddingTop} className="col-sm border">
+      <div style={styles.paddingTop} className="col-sm">
         <h5>Comparing 1-4 of 4</h5>
       </div>
 
@@ -73,7 +73,7 @@ const Fixedarea = props => (
         <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm">Remove</button>
       </div>
 
-      <div style={styles.paddingTop} className="col-sm">
+      <div style={{paddingTop: 15}} className="col-sm">
         <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm">Change</button>
         <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm">Remove</button>
       </div>
@@ -81,25 +81,25 @@ const Fixedarea = props => (
     </div> 
 
     <div className="row text-center"> {/* FIXED ROW WITH YEAR/MODEL INFO */}
-      <div className="col-sm">
+      <div style={{borderRightStyle: "groove"}} className="col-sm">
             <div>
               
             </div>
       </div>
 
-      <div className="col-sm">
+      <div style={{borderRightStyle: "groove"}} className="col-sm">
             <div style={styles.yearMake}>
                 <h5>{props.name}</h5>
             </div>
       </div>
 
-      <div className="col-sm">
+      <div style={{borderRightStyle: "groove"}} className="col-sm">
             <div style={styles.yearMake}>
                 <h5>2014 Honda Pilot</h5>
             </div>
       </div>
 
-      <div className="col-sm">
+      <div style={{borderRightStyle: "groove"}} className="col-sm">
             <div style={styles.yearMake}>
                 <h5>2014 Nissan Pathfinder</h5>
             </div>

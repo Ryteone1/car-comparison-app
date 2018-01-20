@@ -6,15 +6,20 @@ import React, { Component } from 'react';
 import { Link } from "react-router";
 import Navbar from "./Navbar";
 import Fixedarea from "./Fixedarea";
+import Card from "./Card";
 import Cards from "./Cards";
 import Vehiclespecs from "./Vehiclespecs";
-import friends from "./friends.json"
+import Cars from "./Cars.json"
 import Compare from "./Compare";
 
 
 
 // Create the Main component
 class Main extends Component {
+
+  state = {
+    Cars
+  };
 
   render() {
 
@@ -24,15 +29,13 @@ class Main extends Component {
          
         <Navbar />
         <br />
-        <Fixedarea 
-          name={friends[0].name} />
+        <Fixedarea />
         <Cards 
-          image={friends[0].image} />
+          image={Cars[1].image} 
+          name={Cars[1].name} />
         <br />
 
-      
-
-        <br />
+    
         <Vehiclespecs />  
 
         <footer>
