@@ -9,7 +9,7 @@ const styles = {
     zIndex: 1,
     backgroundColor: "#ecf0f1",
     borderRadius: 5,
-    border: "groove"
+    border: "groove",
   },
 
   border: {
@@ -89,7 +89,7 @@ const Fixedarea = props => (
 
       <div style={{borderRightStyle: "groove"}} className="col-sm">
             <div style={styles.yearMake}>
-                <h5>{props.name}</h5>
+                <h5>2014 Ford Explorer</h5>
             </div>
       </div>
 

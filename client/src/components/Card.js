@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import "./Main.css";
 
 const styles = {
   brand: {
@@ -13,22 +14,14 @@ const styles = {
 };
 
 
-const Card = (props) => (
+const Card = (props) => (     
 
 
-  <div style={styles.boxShadow} className="card-group">
-    <div style={styles.background} className="card text-center">            
-      <div className="card-body">
-        <a style={styles.boxShadow} className="btn btn-primary btn-sm text-center" href="#" role="button">New Comparison</a>
-      </div>
-    </div>    
-
-
-      <div className="card text-center">
+    <div className="card text-center">
       <img className="card-img-top" alt="Card image cap" src={props.image}/>
       <div className="card-body">
 
-        <div style={styles.boxShadow} className="dropdown">
+        <div className="dropdown boxShadow">
           <button className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Select Trim
           </button>
@@ -58,7 +51,7 @@ const Card = (props) => (
     </div>
 
 
-</div>
+
 
  
 

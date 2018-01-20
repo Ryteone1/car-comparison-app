@@ -11,6 +11,9 @@ import Cards from "./Cards";
 import Vehiclespecs from "./Vehiclespecs";
 import Cars from "./Cars.json"
 import Compare from "./Compare";
+import "./Main.css";
+import Dropdown from "./Dropdown";
+import DropdownItem from "./DropdownItem";
 
 
 
@@ -18,7 +21,7 @@ import Compare from "./Compare";
 class Main extends Component {
 
   state = {
-    Cars
+    Cars: Cars
   };
 
   render() {
@@ -30,11 +33,36 @@ class Main extends Component {
         <Navbar />
         <br />
         <Fixedarea />
-        <Cards 
-          image={Cars[1].image} 
-          name={Cars[1].name} />
-        <br />
 
+        <Cards>
+
+          <div className="card text-center bg">            
+            <div className="card-body">
+              <a className="btn btn-primary btn-sm text-center boxShadow" href="#" role="button">New Comparison</a>
+            </div>
+          </div>  
+
+          <br />
+
+          {this.state.Cars.map(car => (
+            <Card           
+              name={car.name}
+              image={car.image}              
+            />
+            ))}
+
+            <Dropdown>
+                {this.state.Cars.map(car => (
+                    <DropdownItem        
+                      name={car.name}              
+                />
+                ))}
+            </Dropdown>  
+
+        </Cards>
+              
+
+        <br />
     
         <Vehiclespecs />  
 
