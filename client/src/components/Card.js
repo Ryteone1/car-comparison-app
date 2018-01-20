@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
 import "./Main.css";
+import Dropdown from "./Dropdown";
+import DropdownItem from "./DropdownItem";
 
 const styles = {
   brand: {
@@ -14,47 +16,14 @@ const styles = {
 };
 
 
-const Card = (props) => (     
+const Card = (props) => (   
 
-
-    <div className="card text-center">
-      <img className="card-img-top" alt="Card image cap" src={props.image}/>
-      <div className="card-body">
-
-        <div className="dropdown boxShadow">
-          <button className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Select Trim
-          </button>
-
-           <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a className="dropdown-item" href="#">{props.name}
-              <i className="fa fa-info-circle pull-right" aria-hidden="true" href="#" tabIndex="0" data-toggle="popover" data-placement="right" data-trigger="hover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></i>
-            }
-            }
-            </a> 
-
-            <a className="dropdown-item" href="#">{props.name}
-              <i className="fa fa-info-circle pull-right" aria-hidden="true" href="#" tabIndex="0" data-toggle="popover" data-placement="right" data-trigger="hover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></i>
-            }
-            </a> 
-
-            <a className="dropdown-item" href="#">{props.name}
-              <i className="fa fa-info-circle pull-right" aria-hidden="true" href="#" tabIndex="0" data-toggle="popover" data-placement="right" data-trigger="hover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></i>
-            }
-            </a> 
-          </div>
-
-        </div>
-        
-      </div> 
-      
-    </div>
-
-
-
-
- 
-
+  <div className="card text-center">
+    <img className="card-img-top" alt="Card image cap" src={props.image}/>
+    <div className="card-body">     
+      {props.children}
+    </div>     
+  </div>
 
 );
   

@@ -15,10 +15,9 @@ const styles = {
 
 const DropdownItem= (props) => (
 
-    <a className="dropdown-item" href="#">{props.name}
-          <i className="fa fa-info-circle pull-right" aria-hidden="true" href="#" tabIndex="0" data-toggle="popover" data-placement="right" data-trigger="hover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></i>
-        
-      </a> 
+  <a className="dropdown-item" href="#">{props.name}
+    <i className="fa fa-info-circle pull-right" aria-hidden="true" href="#" tabIndex="0" data-toggle="popover" data-placement="right" data-trigger="hover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></i>      
+  </a> 
 
   
 

@@ -35,34 +35,45 @@ class Main extends Component {
         <Fixedarea />
 
         <Cards>
-
           <div className="card text-center bg">            
             <div className="card-body">
               <a className="btn btn-primary btn-sm text-center boxShadow" href="#" role="button">New Comparison</a>
             </div>
           </div>  
 
-          <br />
-
           {this.state.Cars.map(car => (
             <Card           
               name={car.name}
               image={car.image}              
-            />
-            ))}
+            >
 
             <Dropdown>
-                {this.state.Cars.map(car => (
-                    <DropdownItem        
-                      name={car.name}              
-                />
-                ))}
-            </Dropdown>  
+              <DropdownItem name={car.name} />
+            </Dropdown>
 
+            </Card>
+
+          ))}
         </Cards>
-              
+
+
 
         <br />
+
+        <Cards>
+          <Card
+            name={Cars[0].name}
+            image={Cars[0].image} 
+          >
+
+            <Dropdown>
+              <DropdownItem name={Cars[0].name}>                
+              </DropdownItem>
+            </Dropdown>
+
+          </Card>          
+        </Cards>
+
     
         <Vehiclespecs />  
 

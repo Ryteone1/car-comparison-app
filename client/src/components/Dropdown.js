@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 import "./Main.css";
+import DropdownItem from "./DropdownItem";
 
 const styles = {
   brand: {
@@ -15,15 +16,14 @@ const styles = {
 
 const Dropdown = (props) => (
 
- <div className="dropdown boxShadow">
-          <button className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Select Trim
-          </button>
+  <div className="dropdown boxShadow">
+    <button className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Select Trim
+    </button>
 
-      <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          {props.children}
-            
-      </div>
+    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        {props.children}          
+    </div>
 
   </div>
   
