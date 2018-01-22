@@ -67,16 +67,26 @@
 
     <!-- COPIED FROM W3 SCHOOLS / REQUIRED FOR POPOVER TO WORK -->
     <script>
-        $(document).ready(function(){
-            $('[data-toggle="popover"]').popover();   
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+
+
+        $("#remove1").click(function(){
+          $("#remove1name").hide();
         });
+
+
+        $("#show").click(function(){
+           $("p").show();  
+        });
+
+    
+      });
+
+
     </script>  
 
-    <script>
-      $(document).ready(function(){
-        $('[data-toggle="popover"]').popover();   
-      });
-    </script>
+  
     
 
   </body>

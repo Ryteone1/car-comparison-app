@@ -1,6 +1,42 @@
-[
+[  
   {
     "id": 1,
+    "year": 2014,
+    "make": "Honda",
+    "model": "Pilot",
+    "trim": {
+      "trim1": "2WD 4dr LX",
+      "trim2": "2WD 4dr EX",
+      "trim3": "2WD 4dr Touring"
+    },
+
+    "image": {
+      "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014HON011c_320/2014HON011c_320_01.png",
+      "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014HON011a_320/2014HON011a_320_01.png",
+      "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014HON011d_320/2014HON011d_320_01.png"
+    }
+    
+  },
+  {
+    "id": 2,
+    "year": 2014,
+    "make": "Nissan",
+    "model": "Pathfinder",
+    "trim": {
+      "trim1": "2wd 4dr S",
+      "trim2": "2wd 4dr SV Hybrid",
+      "trim3": "2wd 4dr Platinum"
+    },
+
+    "image": {
+      "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014NIS008a_320/2014NIS008a_320_01.png",
+      "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014NIS008b_320/2014NIS008b_320_01.png",
+      "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014NIS008a_320/2014NIS008a_320_01.png"
+    }
+    
+  },
+  {
+    "id": 3,
     "year": 2014,
     "make": "Ford",
     "model": "Explorer",
@@ -10,25 +46,30 @@
       "trim3": "4WD 4dr Sport"
     },
 
-    "image":
-      "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007a_320/2014FRD007a_320_01.png"
-  },
-  {
-    "id": 2,
-    "name": "FWD 4dr Limited",
-    "image":
-      "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007c_320/2014FRD007c_320_01.png"
-  },
-  {
-    "id": 3,
-    "name": "4WD 4dr Sport",
-    "image":
-      "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007b_320/2014FRD007b_320_01.png"
+    "image": {
+      "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007a_320/2014FRD007a_320_01.png",
+      "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007c_320/2014FRD007c_320_01.png",
+      "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007b_320/2014FRD007b_320_01.png"
+    }
+    
   },
   {
     "id": 4,
-    "name": "4WD 4dr Sport",
-    "image":
-      "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007b_320/2014FRD007b_320_01.png"
+    "year": 2014,
+    "make": "Dodge",
+    "model": "Durango",
+    "trim": {
+      "trim1": "2WD 4dr SXT",
+      "trim2": "2WD 4dr Limited",
+      "trim3": "2WD 4dr R/T"
+    },
+
+    "image": {
+      "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014DOD007a_320/2014DOD007a_320_01.png",
+      "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014DOD007a_320/2014DOD007a_320_01.png",
+      "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014DOD007b_320/2014DOD007b_320_01.png"
+    }
+    
   }
+  
 ]

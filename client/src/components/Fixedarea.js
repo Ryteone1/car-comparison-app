@@ -59,8 +59,8 @@ const Fixedarea = props => (
       </div>
 
       <div style={styles.paddingTop} className="col-sm">
-        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm" >Change</button>
-        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm">Remove</button>    
+        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm">Change</button>
+        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm" id="remove1">Remove</button>    
       </div>
 
       <div style={styles.paddingTop} className="col-sm">
@@ -89,7 +89,7 @@ const Fixedarea = props => (
 
       <div style={{borderRightStyle: "groove"}} className="col-sm">
             <div style={styles.yearMake}>
-                <h5>2014 Ford Explorer</h5>
+                <h5>2014 Honda Pilot</h5>
             </div>
       </div>
 

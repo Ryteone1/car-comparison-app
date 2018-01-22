@@ -18,7 +18,7 @@ const styles = {
 
 const Card = (props) => (   
 
-  <div className="card text-center">
+  <div className="card text-center" id="remove1name">
     <img className="card-img-top" alt="Card image cap" src={props.image}/>
     <div className="card-body">     
       {props.children}

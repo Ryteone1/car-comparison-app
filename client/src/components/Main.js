@@ -42,13 +42,17 @@ class Main extends Component {
           </div>  
 
           {this.state.Cars.map(car => (
-            <Card           
-              name={car.name}
-              image={car.image}              
+            <Card 
+              year={car.year}
+              make={car.make}
+              model={car.model} 
+              image={car.image.image1}              
             >
 
             <Dropdown>
-              <DropdownItem name={car.name} />
+              <DropdownItem trim={car.trim.trim1} />
+              <DropdownItem trim={car.trim.trim2} />
+              <DropdownItem trim={car.trim.trim3} />
             </Dropdown>
 
             </Card>
@@ -57,23 +61,9 @@ class Main extends Component {
         </Cards>
 
 
-
         <br />
 
-        <Cards>
-          <Card
-            name={Cars[0].name}
-            image={Cars[0].image} 
-          >
-
-            <Dropdown>
-              <DropdownItem name={Cars[0].name}>                
-              </DropdownItem>
-            </Dropdown>
-
-          </Card>          
-        </Cards>
-
+        <Compare />
     
         <Vehiclespecs />  
 
