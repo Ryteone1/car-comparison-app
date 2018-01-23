@@ -27,6 +27,7 @@
     -->
     <title>Ryte-Auto Comparisons</title>
 
+
       <!-- Font Awesome CSS Icons (For cool glyphicons) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Style to fix the issue of text extending past panel length   -->
@@ -37,6 +38,96 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+             <!-- CARQUERY API -->
+    <script type="text/javascript" src="http://www.carqueryapi.com/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.carqueryapi.com/js/carquery.0.3.4.js"></script>
+
+    <script type="text/javascript">
+    
+      $(document).ready(function() {
+
+        var carquery = new CarQuery();
+
+        carquery.init();
+
+        carquery.setFilters( {sold_in_us:true} );
+
+        carquery.initYearMakeModelTrim('car-years', 'car-makes', 'car-models', 'car-model-trims');
+
+        $('#cq-show-data').click(  function(){ carquery.populateCarData('car-model-data'); } );
+
+        carquery.initMakeModelTrimList('make-list', 'model-list', 'trim-list', 'trim-data-list');
+
+        });
+
+    </script>
+
+
+    <script type="text/javascript">
+    
+      $(document).ready(function() {
+
+        var carquery = new CarQuery();
+
+        carquery.init();
+
+        carquery.setFilters( {sold_in_us:true} );
+
+        carquery.initYearMakeModelTrim('car-years2', 'car-makes2', 'car-models2', 'car-model-trims2');
+
+        $('#cq-show-data').click(  function(){ carquery.populateCarData('car-model-data'); } );
+
+        carquery.initMakeModelTrimList('make-list', 'model-list', 'trim-list', 'trim-data-list');
+
+        });
+
+    </script>
+
+
+    <script type="text/javascript">
+    
+      $(document).ready(function() {
+
+        var carquery = new CarQuery();
+
+        carquery.init();
+
+        carquery.setFilters( {sold_in_us:true} );
+
+        carquery.initYearMakeModelTrim('car-years3', 'car-makes3', 'car-models3', 'car-model-trims3');
+
+        $('#cq-show-data').click(  function(){ carquery.populateCarData('car-model-data'); } );
+
+        carquery.initMakeModelTrimList('make-list', 'model-list', 'trim-list', 'trim-data-list');
+
+        });
+
+    </script>
+
+
+    <script type="text/javascript">
+    
+      $(document).ready(function() {
+
+        var carquery = new CarQuery();
+
+        carquery.init();
+
+        carquery.setFilters( {sold_in_us:true} );
+
+        carquery.initYearMakeModelTrim('car-years4', 'car-makes4', 'car-models4', 'car-model-trims4');
+
+        $('#cq-show-data').click(  function(){ carquery.populateCarData('car-model-data'); } );
+
+        carquery.initMakeModelTrimList('make-list', 'model-list', 'trim-list', 'trim-data-list');
+
+        });
+
+    </script>
+
+
+
 
 
     <style>
@@ -69,25 +160,10 @@
     <script>
       $(document).ready(function(){
         $('[data-toggle="popover"]').popover();
-
-
-        $("#remove1").click(function(){
-          $("#remove1name").hide();
-        });
-
-
-        $("#show").click(function(){
-           $("p").show();  
-        });
-
-    
+           
       });
 
-
-    </script>  
-
-  
-    
+    </script>      
 
   </body>
 </html>

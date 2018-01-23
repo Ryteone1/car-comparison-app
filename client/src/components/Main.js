@@ -11,6 +11,7 @@ import Cards from "./Cards";
 import Vehiclespecs from "./Vehiclespecs";
 import Cars from "./Cars.json"
 import Compare from "./Compare";
+import CompareCard from "./CompareCard";
 import "./Main.css";
 import Dropdown from "./Dropdown";
 import DropdownItem from "./DropdownItem";

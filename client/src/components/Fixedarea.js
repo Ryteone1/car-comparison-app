@@ -78,13 +78,13 @@ const Fixedarea = props => (
         <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm">Remove</button>
       </div>
 
+
     </div> 
+
 
     <div className="row text-center"> {/* FIXED ROW WITH YEAR/MODEL INFO */}
       <div style={{borderRightStyle: "groove"}} className="col-sm">
-            <div>
-              
-            </div>
+            <div></div>
       </div>
 
       <div style={{borderRightStyle: "groove"}} className="col-sm">
@@ -108,9 +108,9 @@ const Fixedarea = props => (
       <div className="col-sm">
             <div style={styles.yearMake}> 
                 <h5>2014 Chevy Traverse</h5>
-            </div>
-          
+            </div>          
       </div>
+
 
     </div>
 
@@ -120,6 +120,11 @@ const Fixedarea = props => (
   
 
 export default Fixedarea;
+
+
+
+
+
 
 
 
