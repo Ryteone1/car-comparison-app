@@ -68,7 +68,7 @@ const Compare = () => (
       <br />
 
       <div style={styles.padding} className="dropdown">
-        <select name="car-model-trims" id="car-model-trims" style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" ></select>   
+        <select name="car-model-trims" id="car-model-trims" style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button">Select Trim</select>   
       </div>
 
       <br />

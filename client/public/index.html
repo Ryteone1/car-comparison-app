@@ -40,8 +40,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
              <!-- CARQUERY API -->
-    <script type="text/javascript" src="http://www.carqueryapi.com/js/jquery.min.js"></script>
-    <script type="text/javascript" src="http://www.carqueryapi.com/js/carquery.0.3.4.js"></script>
+    <!-- <script type="text/javascript" src="http://www.carqueryapi.com/js/jquery.min.js"></script> -->
+    <!-- <script type="text/javascript" src="http://www.carqueryapi.com/js/carquery.0.3.4.js"></script> -->
+
 
     <script type="text/javascript">
     
@@ -51,7 +52,7 @@
 
         carquery.init();
 
-        carquery.setFilters( {sold_in_us:true} );
+        carquery.setFilters( {sold_in_us:false} );
 
         carquery.initYearMakeModelTrim('car-years', 'car-makes', 'car-models', 'car-model-trims');
 

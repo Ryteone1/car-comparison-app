@@ -51,7 +51,7 @@ class Main extends Component {
             >
 
             <Dropdown>
-              <DropdownItem trim={car.trim.trim1} />
+              <DropdownItem trim={car.trim.trim1} image={car.image.images1} />
               <DropdownItem trim={car.trim.trim2} />
               <DropdownItem trim={car.trim.trim3} />
             </Dropdown>
@@ -65,6 +65,7 @@ class Main extends Component {
         <br />
 
         <Compare />
+        <br />
     
         <Vehiclespecs />  
 
