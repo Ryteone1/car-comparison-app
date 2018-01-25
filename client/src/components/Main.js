@@ -23,7 +23,7 @@ class Main extends Component {
 
     state = {    
       Cars: Cars,
-      image: "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017HOS030008_320/2017HOS030008_320_01.png"
+      image: ""
        
     };
 
@@ -31,7 +31,7 @@ class Main extends Component {
   selectTrim3 = (event) => {
  
     this.setState({ 
-      image: "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017HOS030003_320/2017HOS030003_320_01.png"
+      image: Cars[0].image.image3
 
      });
 
@@ -40,13 +40,6 @@ class Main extends Component {
   };
 
 
-
-  selectTrim3 = (event) => {
-
-    alert("hello");
-    console.log(event + "hello");
-
-  }
 
 
 
@@ -84,6 +77,7 @@ class Main extends Component {
 
             <Dropdown>
               <DropdownItem 
+              onClick={this.selectTrim3}
               trim={car.trim.trim1} 
               image={this.state.image} 
               popover={car.popover.popover1}

@@ -17,7 +17,7 @@ const styles = {
 const Dropdown = (props) => (
 
   <div className="dropdown boxShadow">
-    <button className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={this.selectTrim3}>
+    <button className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={props.onClick}>
       Select Trim
     </button>
 
