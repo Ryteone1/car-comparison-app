@@ -21,18 +21,23 @@ import DropdownItem from "./DropdownItem";
 // Create the Main component
 class Main extends Component {
 
-    state = {    
-      Cars: Cars,
-      image: "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017HOS030008_320/2017HOS030008_320_01.png"
+    state = { 
+      cars:Cars,  
+      currentImage1:"",
+      currentImage2:"",
+      currentImage3:"",
+      currentImage4:""
        
     };
 
   
   selectTrim3 = (event) => {
- 
+    const name = event.target.name;
+    const value = event.target.value;
+    
     this.setState({ 
-      image: "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017HOS030003_320/2017HOS030003_320_01.png"
-
+      
+          [name]=value
      });
 
      alert("Hello");
