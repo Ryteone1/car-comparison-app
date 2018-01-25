@@ -13,10 +13,12 @@ const styles = {
   }
 };
 
+
+
+
 const DropdownItem= (props) => (
 
-  <a className="dropdown-item" href="#" onClick=
-        {props.onClick}>{props.trim}
+  <a className="dropdown-item" href="#" onClick={this.selectTrim3}>{props.trim}
     <i className="fa fa-info-circle pull-right" aria-hidden="true" href="#" tabIndex="0" data-toggle="popover" data-placement="right" data-trigger="hover" title={props.heading} data-content={props.popover}></i>      
   </a> 
 

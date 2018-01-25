@@ -1,63 +1,67 @@
 [  
   {
     "id": 1,
-    "year": 2014,
+    "year": 2017,
     "make": "Honda",
     "model": "Pilot",
     "trim": {
-      "trim1": "2WD 4dr LX",
-      "trim2": "2WD 4dr EX",
-      "trim3": "2WD 4dr Touring"
+      "trim1": "EX-L 2WD",
+      "trim2": "Touring 2WD",
+      "trim3": "Elite AWD"
     },
 
     "image": {
-      "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014HON011c_320/2014HON011c_320_01.png",
-      "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014HON011a_320/2014HON011a_320_01.png",
-      "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014HON011d_320/2014HON011d_320_01.png"
+      "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017HOS030008_320/2017HOS030008_320_01.png",
+      "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017HOS030002_320/2017HOS030002_320_01.png",
+      "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017HOS030003_320/2017HOS030003_320_01.png"
     },
 
     "heading": {
-      "heading1": "Base Model Features plus:",
-      "heading2": "XLT Features plus:",
-      "heading3": "Limited Features plus:"
+      "heading1": "EX-L ($36,760 starting MSRP)",
+      "heading2": "Touring ($41,970 starting MSRP)",
+      "heading3": "Elite ($47,470 starting MSRP)"
     },
 
      "popover": {
-      "popover1": "Base model features plus: SiriusXM Radio"
+      "popover1": "LX AND EX features plus: Leather seats, One-Touch 2nd-Row Seats, Available Rear Entertainment System, Available Honda Sensing",
+      "popover2": "EX-L features plus: 9-Speed Automatic Transmission, Satellite-Linked Navigation, 20-inch Alloy Wheels, Honda Sensing",
+      "popover3": "Touring features plus: Heated 2nd-Row Captain's Chairs, Panoramic Roof, Blind Spot Information System, LED Headlights w/Auto On-Off"
     }
     
   },
   {
     "id": 2,
-    "year": 2014,
+    "year": 2017,
     "make": "Nissan",
     "model": "Pathfinder",
     "trim": {
-      "trim1": "2wd 4dr S",
-      "trim2": "2wd 4dr SV Hybrid",
+      "trim1": "2wd 4dr SV",
+      "trim2": "2wd 4dr SL",
       "trim3": "2wd 4dr Platinum"
     },
 
     "image": {
-      "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014NIS008a_320/2014NIS008a_320_01.png",
-      "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014NIS008b_320/2014NIS008b_320_01.png",
-      "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014NIS008a_320/2014NIS008a_320_01.png"
+      "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017NIS070003_320/2017NIS070003_320_01.png",
+      "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017NIS070002_320/2017NIS070002_320_01.png",
+      "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017NIS070001_320/2017NIS070001_320_01.png"
     },
 
     "heading": {
-      "heading1": "Base Model Features plus:",
-      "heading2": "XLT Features plus:",
-      "heading3": "Limited Features plus:"
+      "heading1": "SV ($33,730 starting MSRP)",
+      "heading2": "SL ($37,750 starting MSRP)",
+      "heading3": "Platinum ($42,570 starting MSRP)"
     },
 
      "popover": {
-      "popover1": "Base model features plus: SiriusXM Radio"
+      "popover1": "S features plus: Fog Lights, Nissan Intelligent Key, Remote Engine Start System, Rear Sonar System",
+      "popover2": "SV features plus: Motion Activated Liftgate, Leather Seats and Door Trim, Intelligent Cruise Control and Blind Spot Warning, Navigation",
+      "popover3": "SL features plus: 20' Aluminum-alloy Wheels, LED Headlights, Bose Premium Audio System w/ 13 Speakers, Heated and Cooled Seats"
     }
     
   },
   {
     "id": 3,
-    "year": 2014,
+    "year": 2017,
     "make": "Ford",
     "model": "Explorer",
     "trim": {
@@ -67,39 +71,39 @@
     },
 
     "image": {
-      "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007a_320/2014FRD007a_320_01.png",
-      "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007c_320/2014FRD007c_320_01.png",
-      "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007b_320/2014FRD007b_320_01.png"
+      "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017FOS100002_320/2017FOS100002_320_01.png",
+      "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017FOS100003_320/2017FOS100003_320_01.png",
+      "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017FOS100001_320/2017FOS100001_320_01.png"
     },
 
     "heading": {
-      "heading1": "Base Model Features plus:",
-      "heading2": "XLT Features plus:",
+      "heading1": "XLT ($34,020 starting MSRP)",
+      "heading2": "Limited ($42,090 starting MSRP)",
       "heading3": "Sport ($45,950 starting MSRP)"
     },
 
     "popover": {
-      "popover1": "SiriusXM Radio, Reverse Sensing System, LED Signature Lighting, Unique Cloth Seats",
-      "popover2": "2.3L I-4 EcoBoost Engine, Voice-Activated Touchscreen Navigation System, Sony Audio System w/ (12) Speakers, Perforated Leather Seating w/ Heated & Cooled Front Seats",
+      "popover1": "Base Model Features plus: SiriusXM Radio, Reverse Sensing System, LED Signature Lighting, Unique Cloth Seats",
+      "popover2": "XLT Features plus: 2.3L I-4 EcoBoost Engine, Voice-Activated Touchscreen Navigation System, Sony Audio System w/ (12) Speakers, Perforated Leather Seating w/ Heated & Cooled Front Seats",
       "popover3": "XLT Features plus: 3.5L EcoBoost V6 Engine,   Perforated Leather Seating w/ Red Accent Stitching,   20-inch Machined Aluminum Wheels"
     }
     
   },
   {
     "id": 4,
-    "year": 2014,
+    "year": 2017,
     "make": "Dodge",
     "model": "Durango",
     "trim": {
-      "trim1": "2WD 4dr SXT",
-      "trim2": "2WD 4dr Limited",
-      "trim3": "2WD 4dr R/T"
+      "trim1": "GT RWD",
+      "trim2": "R/T RWD",
+      "trim3": "Citadel RWD"
     },
 
     "image": {
-      "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014DOD007a_320/2014DOD007a_320_01.png",
-      "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014DOD007a_320/2014DOD007a_320_01.png",
-      "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014DOD007b_320/2014DOD007b_320_01.png"
+      "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2018DOS010001_320/2018DOS010001_320_01.png",
+      "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2018DOS010003_320/2018DOS010003_320_01.png",
+      "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2018DOS010002_320/2018DOS010002_320_01.png"
     },
 
     "heading": {

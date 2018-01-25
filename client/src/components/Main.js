@@ -21,45 +21,38 @@ import DropdownItem from "./DropdownItem";
 // Create the Main component
 class Main extends Component {
 
- constructor(props) {
-    super(props);
-    this.state = {    
+    state = {    
       Cars: Cars,
-      image: "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007a_320/2014FRD007a_320_01.png"   
+      image: "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017HOS030008_320/2017HOS030008_320_01.png"
+       
     };
 
-   this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
- 
- 
-  selectTrim = () => {
+  
+  selectTrim3 = (event) => {
  
     this.setState({ 
-      image: "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007c_320/2014FRD007c_320_01.png"
+      image: "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2017HOS030003_320/2017HOS030003_320_01.png"
+
      });
- 
- 
- 
+
+     alert("Hello");
+
   };
 
 
 
+  selectTrim3 = (event) => {
+
+    alert("hello");
+    console.log(event + "hello");
+
+  }
+
 
 
 
 
  
-
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
-
-  handleSubmit(event) {
-    alert('Your favorite flavor is: ' + this.state.value);
-    event.preventDefault();
-  }
-
 
 
 
@@ -92,18 +85,19 @@ class Main extends Component {
             <Dropdown>
               <DropdownItem 
               trim={car.trim.trim1} 
-              image={car.image.image1} 
+              image={this.state.image} 
               popover={car.popover.popover1}
               heading={car.heading.heading1} />
               
-              <DropdownItem 
+              <DropdownItem        
               trim={car.trim.trim2} 
-              image={car.image.image2}
+              image={this.state.image}
               popover={car.popover.popover2}
               heading={car.heading.heading2} />
+
               <DropdownItem 
               trim={car.trim.trim3} 
-              image={car.image.image3}
+              image={this.state.image}
               popover={car.popover.popover3}
               heading={car.heading.heading3} />
             </Dropdown>
@@ -113,10 +107,6 @@ class Main extends Component {
           ))}
         </Cards>
 
-
-        <br />
-
-        <Compare />
         <br />
     
         <Vehiclespecs />  
@@ -133,7 +123,7 @@ class Main extends Component {
       </div>
     );
   }
-};
+}
 
 // Export the module back to the route
 export default Main;

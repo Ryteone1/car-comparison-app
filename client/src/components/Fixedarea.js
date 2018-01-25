@@ -86,25 +86,25 @@ const Fixedarea = props => (
 
       <div style={{borderRightStyle: "groove"}} className="col-sm">
             <div style={styles.yearMake} onChange={this.handleChange}>
-                <h5>{props.year}</h5>
+                <h5>2017 Honda Pilot</h5>
             </div>
       </div>
 
       <div style={{borderRightStyle: "groove"}} className="col-sm">
             <div style={styles.yearMake}>
-                <h5>2014 Honda Pilot</h5>
+                <h5>2017 Nissan Pathfinder</h5>
             </div>
       </div>
 
       <div style={{borderRightStyle: "groove"}} className="col-sm">
             <div style={styles.yearMake}>
-                <h5>2014 Nissan Pathfinder</h5>
+                <h5>2017 Ford Explorer</h5>
             </div>
       </div>
 
       <div className="col-sm">
             <div style={styles.yearMake}> 
-                <h5>2014 Chevy Traverse</h5>
+                <h5>2017 Dodge Durango</h5>
             </div>          
       </div>
 
