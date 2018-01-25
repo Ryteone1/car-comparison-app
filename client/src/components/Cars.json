@@ -14,6 +14,16 @@
       "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014HON011c_320/2014HON011c_320_01.png",
       "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014HON011a_320/2014HON011a_320_01.png",
       "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014HON011d_320/2014HON011d_320_01.png"
+    },
+
+    "heading": {
+      "heading1": "Base Model Features plus:",
+      "heading2": "XLT Features plus:",
+      "heading3": "Limited Features plus:"
+    },
+
+     "popover": {
+      "popover1": "Base model features plus: SiriusXM Radio"
     }
     
   },
@@ -32,6 +42,16 @@
       "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014NIS008a_320/2014NIS008a_320_01.png",
       "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014NIS008b_320/2014NIS008b_320_01.png",
       "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014NIS008a_320/2014NIS008a_320_01.png"
+    },
+
+    "heading": {
+      "heading1": "Base Model Features plus:",
+      "heading2": "XLT Features plus:",
+      "heading3": "Limited Features plus:"
+    },
+
+     "popover": {
+      "popover1": "Base model features plus: SiriusXM Radio"
     }
     
   },
@@ -50,6 +70,18 @@
       "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007a_320/2014FRD007a_320_01.png",
       "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007c_320/2014FRD007c_320_01.png",
       "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007b_320/2014FRD007b_320_01.png"
+    },
+
+    "heading": {
+      "heading1": "Base Model Features plus:",
+      "heading2": "XLT Features plus:",
+      "heading3": "Sport ($45,950 starting MSRP)"
+    },
+
+    "popover": {
+      "popover1": "SiriusXM Radio, Reverse Sensing System, LED Signature Lighting, Unique Cloth Seats",
+      "popover2": "2.3L I-4 EcoBoost Engine, Voice-Activated Touchscreen Navigation System, Sony Audio System w/ (12) Speakers, Perforated Leather Seating w/ Heated & Cooled Front Seats",
+      "popover3": "XLT Features plus: 3.5L EcoBoost V6 Engine,   Perforated Leather Seating w/ Red Accent Stitching,   20-inch Machined Aluminum Wheels"
     }
     
   },
@@ -68,6 +100,16 @@
       "image1": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014DOD007a_320/2014DOD007a_320_01.png",
       "image2": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014DOD007a_320/2014DOD007a_320_01.png",
       "image3": "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014DOD007b_320/2014DOD007b_320_01.png"
+    },
+
+    "heading": {
+      "heading1": "Base Model Features plus:",
+      "heading2": "XLT Features plus:",
+      "heading3": "Limited Features plus:"
+    },
+
+     "popover": {
+      "popover1": "Base model features plus: SiriusXM Radio"
     }
     
   }

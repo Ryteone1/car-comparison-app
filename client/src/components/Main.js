@@ -21,9 +21,47 @@ import DropdownItem from "./DropdownItem";
 // Create the Main component
 class Main extends Component {
 
-  state = {
-    Cars: Cars
+ constructor(props) {
+    super(props);
+    this.state = {    
+      Cars: Cars,
+      image: "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007a_320/2014FRD007a_320_01.png"   
+    };
+
+   this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+ 
+ 
+  selectTrim = () => {
+ 
+    this.setState({ 
+      image: "http://images.nadaguides.com/ChromeImageGallery/Expanded/Transparent/320/2014FRD007c_320/2014FRD007c_320_01.png"
+     });
+ 
+ 
+ 
   };
+
+
+
+
+
+
+
+ 
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('Your favorite flavor is: ' + this.state.value);
+    event.preventDefault();
+  }
+
+
+
 
   render() {
 
@@ -44,6 +82,7 @@ class Main extends Component {
 
           {this.state.Cars.map(car => (
             <Card 
+              key={car.id}
               year={car.year}
               make={car.make}
               model={car.model} 
@@ -51,9 +90,22 @@ class Main extends Component {
             >
 
             <Dropdown>
-              <DropdownItem trim={car.trim.trim1} image={car.image.images1} />
-              <DropdownItem trim={car.trim.trim2} />
-              <DropdownItem trim={car.trim.trim3} />
+              <DropdownItem 
+              trim={car.trim.trim1} 
+              image={car.image.image1} 
+              popover={car.popover.popover1}
+              heading={car.heading.heading1} />
+              
+              <DropdownItem 
+              trim={car.trim.trim2} 
+              image={car.image.image2}
+              popover={car.popover.popover2}
+              heading={car.heading.heading2} />
+              <DropdownItem 
+              trim={car.trim.trim3} 
+              image={car.image.image3}
+              popover={car.popover.popover3}
+              heading={car.heading.heading3} />
             </Dropdown>
 
             </Card>

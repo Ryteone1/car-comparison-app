@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import "./Main.css";
 
 const styles = {
 	padding: {
@@ -32,12 +33,12 @@ const styles = {
 const CompareCard = () => (
 
 <div style={styles.background} className="card text-center">
-  <div style={styles.topbutton} className="dropdown">
+  <div style={styles.topbutton} className="dropdown boxShadow">
   {/* <button style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Year
   </button> */}
  
-    <select name="car-years" id="car-years" style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button">Select Year</select>  
+    <select name="car-years" id="car-years" className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button">Select Year</select>  
   </div>
 
   <br />
