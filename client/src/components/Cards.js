@@ -20,7 +20,7 @@ const styles = {
 const Cards = props => {
   return(
 
-    <div className="card-group boxShadow">
+    <div style={styles.boxShadow} className="card-group">
       {props.children}
     </div>
 

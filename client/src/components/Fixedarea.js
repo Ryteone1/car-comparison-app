@@ -1,4 +1,5 @@
 import React from "react";
+import "./Main.css";
 
 
 const styles = {
@@ -26,8 +27,6 @@ const styles = {
     left: 6,
     paddingRight: 20,
     paddingLeft: 20,
-    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-    borderRadius: 5
   }, 
 
   moveLeft: {
@@ -35,8 +34,6 @@ const styles = {
     right: 6,
     paddingRight: 20,
     paddingLeft: 20,
-    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-    borderRadius: 5
   },
 
   yearMake: {
@@ -59,58 +56,58 @@ const Fixedarea = props => (
       </div>
 
       <div style={styles.paddingTop} className="col-sm">
-        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm">Change</button>
-        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm" id="remove1">Remove</button>    
+        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm boxShadow">Change</button>
+        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm boxShadow" id="remove1">Remove</button>    
       </div>
 
       <div style={styles.paddingTop} className="col-sm">
-        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm">Change</button>
-        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm">Remove</button>
+        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm boxShadow">Change</button>
+        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm boxShadow">Remove</button>
       </div>
 
       <div style={styles.paddingTop} className="col-sm">
-        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm">Change</button>
-        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm">Remove</button>
+        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm boxShadow">Change</button>
+        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm boxShadow">Remove</button>
       </div>
 
       <div style={{paddingTop: 15}} className="col-sm">
-        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm">Change</button>
-        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm">Remove</button>
+        <button type="button" style={styles.moveLeft} className="btn btn-primary btn-sm boxShadow">Change</button>
+        <button type="button" style={styles.moveRight} className="btn btn-secondary btn-sm boxShadow">Remove</button>
       </div>
+
 
     </div> 
 
+
     <div className="row text-center"> {/* FIXED ROW WITH YEAR/MODEL INFO */}
       <div style={{borderRightStyle: "groove"}} className="col-sm">
-            <div>
-              
+            <div></div>
+      </div>
+
+      <div style={{borderRightStyle: "groove"}} className="col-sm">
+            <div style={styles.yearMake} onChange={this.handleChange}>
+                <h5>2017 Honda Pilot</h5>
             </div>
       </div>
 
       <div style={{borderRightStyle: "groove"}} className="col-sm">
             <div style={styles.yearMake}>
-                <h5>2014 Honda Pilot</h5>
+                <h5>2017 Nissan Pathfinder</h5>
             </div>
       </div>
 
       <div style={{borderRightStyle: "groove"}} className="col-sm">
             <div style={styles.yearMake}>
-                <h5>2014 Honda Pilot</h5>
-            </div>
-      </div>
-
-      <div style={{borderRightStyle: "groove"}} className="col-sm">
-            <div style={styles.yearMake}>
-                <h5>2014 Nissan Pathfinder</h5>
+                <h5>2017 Ford Explorer</h5>
             </div>
       </div>
 
       <div className="col-sm">
             <div style={styles.yearMake}> 
-                <h5>2014 Chevy Traverse</h5>
-            </div>
-          
+                <h5>2017 Dodge Durango</h5>
+            </div>          
       </div>
+
 
     </div>
 
@@ -120,6 +117,11 @@ const Fixedarea = props => (
   
 
 export default Fixedarea;
+
+
+
+
+
 
 
 

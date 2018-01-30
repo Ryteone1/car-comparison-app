@@ -11,6 +11,7 @@ import Cards from "./Cards";
 import Vehiclespecs from "./Vehiclespecs";
 import Cars from "./Cars.json"
 import Compare from "./Compare";
+import CompareCard from "./CompareCard";
 import "./Main.css";
 import Dropdown from "./Dropdown";
 import DropdownItem from "./DropdownItem";
@@ -20,9 +21,33 @@ import DropdownItem from "./DropdownItem";
 // Create the Main component
 class Main extends Component {
 
-  state = {
-    Cars: Cars
+    state = {    
+      Cars: Cars,
+      image: ""
+       
+    };
+
+  
+  selectTrim3 = (event) => {
+ 
+    this.setState({ 
+      image: Cars[0].image.image3
+
+     });
+
+     alert("Hello");
+
   };
+
+
+
+
+
+
+
+ 
+
+
 
   render() {
 
@@ -43,6 +68,7 @@ class Main extends Component {
 
           {this.state.Cars.map(car => (
             <Card 
+              key={car.id}
               year={car.year}
               make={car.make}
               model={car.model} 
@@ -50,9 +76,24 @@ class Main extends Component {
             >
 
             <Dropdown>
-              <DropdownItem trim={car.trim.trim1} />
-              <DropdownItem trim={car.trim.trim2} />
-              <DropdownItem trim={car.trim.trim3} />
+              <DropdownItem 
+              onClick={this.selectTrim3}
+              trim={car.trim.trim1} 
+              image={this.state.image} 
+              popover={car.popover.popover1}
+              heading={car.heading.heading1} />
+              
+              <DropdownItem        
+              trim={car.trim.trim2} 
+              image={this.state.image}
+              popover={car.popover.popover2}
+              heading={car.heading.heading2} />
+
+              <DropdownItem 
+              trim={car.trim.trim3} 
+              image={this.state.image}
+              popover={car.popover.popover3}
+              heading={car.heading.heading3} />
             </Dropdown>
 
             </Card>
@@ -60,10 +101,7 @@ class Main extends Component {
           ))}
         </Cards>
 
-
         <br />
-
-        <Compare />
     
         <Vehiclespecs />  
 
@@ -79,7 +117,7 @@ class Main extends Component {
       </div>
     );
   }
-};
+}
 
 // Export the module back to the route
 export default Main;

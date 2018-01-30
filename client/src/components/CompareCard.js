@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import "./Main.css";
 
 const styles = {
 	padding: {
@@ -32,58 +33,39 @@ const styles = {
 const CompareCard = () => (
 
 <div style={styles.background} className="card text-center">
-<div style={styles.topbutton} className="dropdown">
-  <button style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <div style={styles.topbutton} className="dropdown boxShadow">
+  {/* <button style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Year
-  </button>
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a className="dropdown-item" href="#">2018</a>
-    <a className="dropdown-item" href="#">2017</a>
-    <a className="dropdown-item" href="#">2016</a>
-    <a className="dropdown-item" href="#">2015</a>
-    <a className="dropdown-item" href="#">2014</a>
-    <a className="dropdown-item" href="#">2013</a>
+  </button> */}
+ 
+    <select name="car-years" id="car-years" className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button">Select Year</select>  
   </div>
-</div>
 
-<br />
+  <br />
 
-<div style={styles.padding} className="dropdown">
-  <button style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Make
-  </button>
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a className="dropdown-item" href="#">Action</a>
-    <a className="dropdown-item" href="#">Another action</a>
-    <a className="dropdown-item" href="#">Something else here</a>
+  <div style={styles.padding} className="dropdown"> 
+    <select name="car-makes" id="car-makes" style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" ></select> 
   </div>
-</div>
 
-<br />
+  <br />
 
-<div style={styles.padding} className="dropdown">
-  <button style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Model
-  </button>
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a className="dropdown-item" href="#">Action</a>
-    <a className="dropdown-item" href="#">Another action</a>
-    <a className="dropdown-item" href="#">Something else here</a>
+  <div style={styles.padding} className="dropdown">
+    <select name="car-models" id="car-models" style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" ></select>  
   </div>
-</div>
 
-<br />
+  <br />
 
-<div style={styles.bottombutton} className="dropdown">
-  <button style={styles.boxShadow}className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Trim
-  </button>
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a className="dropdown-item" href="#">Action</a>
-    <a className="dropdown-item" href="#">Another action</a>
-    <a className="dropdown-item" href="#">Something else here</a>
+  <div style={styles.bottombutton} className="dropdown">
+    <select name="car-model-trims" id="car-model-trims" style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" type="button" ></select>   
   </div>
-</div>
+
+  <br />
+
+      <div style={styles.bottombutton} className="dropdown">
+        <input id="cq-show-data" type="button" value="Go" style={styles.boxShadow} className="btn btn-secondary dropdown-toggle btn-sm btn-block" />
+      </div>
+      
+
 </div>
 
 

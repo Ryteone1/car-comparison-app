@@ -5,7 +5,9 @@ import { Link } from "react-router";
 
 const Vehiclespecs = () => (
 
-  <table className="table table-bordered table-striped text-center ">
+  <div>
+
+  <table id="car-model-data" className="table table-bordered table-striped text-center ">
 
     <thead className="thead">
       <tr className="table-secondary">
@@ -153,6 +155,27 @@ const Vehiclespecs = () => (
 
     </tbody>
   </table>
+
+
+{/*}
+  <select name="car-years" id="car-years" value="Select Year"></select>
+  <br />  
+  <select name="car-makes" id="car-makes"></select> 
+  <br />
+  <select name="car-models" id="car-models"></select>
+  <br />
+  <select name="car-model-trims" id="car-model-trims"></select> 
+
+  <input id="cq-show-data" type="button" value="Go" />
+  <div id="car-model-data"></div>
+
+ 
+  <div id="cq-search-result" style={{display:"none"}}></div>
+*/}
+
+</div>
+
+
 
 );
   
