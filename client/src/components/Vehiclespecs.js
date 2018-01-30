@@ -157,7 +157,7 @@ const Vehiclespecs = () => (
   </table>
 
 
-
+{/*}
   <select name="car-years" id="car-years" value="Select Year"></select>
   <br />  
   <select name="car-makes" id="car-makes"></select> 
@@ -171,8 +171,8 @@ const Vehiclespecs = () => (
 
  
   <div id="cq-search-result" style={{display:"none"}}></div>
+*/}
 
-  
 </div>
 
 
