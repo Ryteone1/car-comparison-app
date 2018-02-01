@@ -12,9 +12,9 @@ const Vehiclespecs = () => (
     <thead className="thead">
       <tr className="table-secondary">
         <th scope="col">MSRP   </th>
-        <th scope="col">$32,500</th>
-        <th scope="col">$33,800</th>
-        <th scope="col">$34,900</th>
+        <th scope="col">$36,760</th>
+        <th scope="col">$33,730</th>
+        <th scope="col">$34,020</th>
         <th scope="col">$35,100</th>
       </tr>
       <tr className="table-light">

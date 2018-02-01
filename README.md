@@ -1,4 +1,12 @@
-This solution uses [create-react-app](https://github.com/facebookincubator/create-react-app).
+# Ryte-Car Comparisons
+
+## *A very helpful car comparison web app that allows users to very easily compare cars side-by-side.  App contains a unique hover popover feature currently not present on any other car-comparison website.  Simply hover over the info icon and detailed information differentiating that trim level from the others will appear in a popover.*
+
+
+
+<img src='../public/images/screenshot.GIF'>
+
+
 
 To run locally:
 * `npm install`

@@ -23,21 +23,19 @@ class Main extends Component {
 
     state = {    
       Cars: Cars,
-      image: ""
+      image: Cars[0].image.image1
        
     };
+      
 
   
-  selectTrim3 = (event) => {
+  selectTrim3 = () => {
  
-    this.setState({ 
-      image: Cars[0].image.image3
-
-     });
-
-     alert("Hello");
+    this.setState({image: Cars[0].image.image2});    
 
   };
+
+
 
 
 
@@ -63,6 +61,7 @@ class Main extends Component {
           <div className="card text-center bg">            
             <div className="card-body">
               <a className="btn btn-primary btn-sm text-center boxShadow" href="#" role="button">New Comparison</a>
+              <img className="card-img-top"/>
             </div>
           </div>  
 
@@ -77,19 +76,21 @@ class Main extends Component {
 
             <Dropdown>
               <DropdownItem 
-              onClick={this.selectTrim3}
+              
               trim={car.trim.trim1} 
               image={this.state.image} 
               popover={car.popover.popover1}
               heading={car.heading.heading1} />
               
-              <DropdownItem        
+              <DropdownItem 
+              onClick={this.selectTrim2}       
               trim={car.trim.trim2} 
               image={this.state.image}
               popover={car.popover.popover2}
               heading={car.heading.heading2} />
 
               <DropdownItem 
+              onClick={this.selectTrim3}
               trim={car.trim.trim3} 
               image={this.state.image}
               popover={car.popover.popover3}
