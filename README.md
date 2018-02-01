@@ -4,7 +4,7 @@
 
 
 
-<img src='../public/images/screenshot.GIF'>
+<img src='../../public/images/screenshot.GIF'>
 
 
 
