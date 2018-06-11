@@ -15,7 +15,7 @@ const styles = {
 const Navbar = () => (
 
   <nav style={styles.boxShadow} className="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a style={styles.brand} className="navbar-brand" href="#">Ryte-Auto Comparisons</a>
+    <a style={styles.brand} className="navbar-brand" href="#">Ryte-Car Comparisons</a>
    
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
